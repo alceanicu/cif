@@ -1,8 +1,8 @@
 {
     "name": "alcea/cif",
     "description": "PHP validation for Romanian VAT code (Validare PHP pentru CIF | CUI)",
-	"keywords":["CIF", "CUI", "PHP", "Validare"],
-	"type":"library",
+    "keywords":["CIF", "CUI", "PHP", "Validare"],
+    "type":"library",
     "license": "MIT",
     "authors": [
         {
