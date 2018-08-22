@@ -18,7 +18,7 @@ namespace alcea\cif;
  * echo "CIF {$cifToBeValidate} is " . ( $cif->isValid() ? 'valid' : 'invalid' ) . PHP_EOL;
  * ```
  * 
- * @property string $_cif - CIF without prefix digit (RO|R)  - $cif = preg_replace("/[^[:alnum:]]/u", '', $cif);
+ * @property string $_cif - CIF without prefix digit (RO|R)  - $cif = preg_replace("/[^0-9]/", "", $cif);
  * @property boolean $_isValid
  * @see https://ro.wikipedia.org/wiki/Cod_de_Identificare_Fiscal%C4%83
  * @author Alcea Nicolae <nicu(dotta)alcea(atta)gmail(dotta)com>
