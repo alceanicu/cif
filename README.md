@@ -12,7 +12,7 @@ composer require alcea/cif
 
 ### 2. or, edit require section from composer.json
 ```
-"alcea/cif": "*"
+"alcea/cif": "^1.1"
 ```
 
 ### 3. or, clone from GitHub
