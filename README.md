@@ -30,6 +30,15 @@ git clone https://github.com/alceanicu/cif.git
  $cif = new Cif($cifToBeValidated);
  echo "CIF {$cifToBeValidated} is " . ( $cif->isValid() ? 'valid' : 'invalid' ) . PHP_EOL;
  ```
+ 
+ # How to run tests?
+```
+## Open an terminal and run commands:
+cd cif
+./vendor/bin/phpunit --bootstrap ./vendor/autoload.php --testdox
+```
+
+
 ## License
 
 [MIT](http://opensource.org/licenses/MIT).
