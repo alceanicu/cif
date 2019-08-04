@@ -16,14 +16,19 @@ final class CnpTest extends TestCase
     {
         return [
             //[CIF, isValid]
-            [159, true],
-            [19, true],
-            [' 19 ', true],
-            ['RO159', false],
-            ['ro159', false],
-            ['R159', false],
             ['0000000', false],
             ['xxx', false],
+            ['-1', false],
+            [9010105, true], #ORANGE ROMANIA SA
+            ['RO 9010105', false],
+            [5888716, true], #RCS & RDS SA
+            ['R5888716', false],
+            [8971726, true], #VODAFONE ROMANIA SA
+            ['89717 26', false],
+            [159, true], #FRIGOTEHNICA SRL
+            ['RO159', false],
+            [19, true], #BUCUR OBOR S.A
+            [' 19 ', true],
         ];
     }
 
