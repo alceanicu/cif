@@ -29,6 +29,10 @@ git clone https://github.com/alceanicu/cif.git
  $cifToBeValidated = '159'; // without prefix digit (RO|R)
  $cif = new Cif($cifToBeValidated);
  echo "CIF {$cifToBeValidated} is " . ( $cif->isValid() ? 'valid' : 'invalid' ) . PHP_EOL;
+ 
+ // or
+
+ echo "CIF {$cifToBeValidated} is " . ( Cif::validate($cifToBeValidated) ? 'valid' : 'invalid' ) . PHP_EOL;
  ```
  
  # How to run tests?

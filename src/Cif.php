@@ -11,11 +11,15 @@ namespace alcea\cif;
  * |C|  - check Digit
  * 
  * ```php
- * use Alcea\Cif\Cif;
+ * use alcea\cif\Cif;
  *
- * $cifToBeValidate = '159'; // without prefix digit (RO|R)
- * $cif = new Cif($cifToBeValidate);
- * echo "CIF {$cifToBeValidate} is " . ( $cif->isValid() ? 'valid' : 'invalid' ) . PHP_EOL;
+ * $cifToBeValidated = '159'; // without prefix digit (RO|R)
+ * $cif = new Cif($cifToBeValidated);
+ * echo "CIF {$cifToBeValidated} is " . ( $cif->isValid() ? 'valid' : 'invalid' ) . PHP_EOL;
+ *
+ * // or
+ *
+ * echo "CIF {$cifToBeValidated} is " . ( Cif::validate($cifToBeValidated) ? 'valid' : 'invalid' ) . PHP_EOL;
  * ```
  * 
  * @property string $_cif - CIF without prefix digit (RO|R)  - $cif = preg_replace("/[^0-9]/", "", $cif);
@@ -39,6 +43,15 @@ class Cif
         $this->_cif = trim($cif);
         $this->_isValid = false;
         $this->validateCIF();
+    }
+
+    /**
+     * @param string|int $cif
+     * @return bool
+     */
+    public static function validate($cif)
+    {
+        return (new static($cif))->isValid();
     }
 
     /**

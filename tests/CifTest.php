@@ -46,9 +46,19 @@ final class CnpTest extends TestCase
      * @param string|int $cif
      * @param boolean $isValid
      */
-    public function testCIF($cif, $isValid)
+    public function testCanValidateCif($cif, $isValid)
     {
         $this->assertEquals((new Cif($cif))->isValid(), $isValid);
+    }
+
+    /**
+     * @dataProvider cifDataProvider
+     * @param string|int $cif
+     * @param boolean $isValid
+     */
+    public function testCanValidateCifByCallingStaticValidator($cif, $isValid)
+    {
+        $this->assertEquals(Cif::validate($cif), $isValid);
     }
 
 }
