@@ -60,7 +60,7 @@ class Cif
         if (!is_numeric($cif)) {
             return false;
         }
-        if ((int) $cif == 0) {
+        if ((int) $cif <= 0) {
             return false;
         }
         $cifLength = strlen($cif);
