@@ -3,7 +3,7 @@
 # CIF
 PHP validation for Romanian VAT code (Validare PHP pentru CIF/ CUI)
 
-#How to install?
+# How to install?
 
 ### 1. Use composer
 ```php
@@ -20,7 +20,7 @@ composer require alcea/cif
 git clone https://github.com/alceanicu/cif.git
 ```
 
-#How to use?
+# How to use?
 
 ```php
  <?php
