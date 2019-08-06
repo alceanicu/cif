@@ -7,4 +7,9 @@ php:
 before_script:
   - composer install --prefer-source --no-interaction --no-dev
 
-script: phpunit
+before_install:
+  - php get github.com/mattn/goveralls
+  
+script:
+  - phpunit
+  - $GOPATH/bin/goveralls -service=travis-ci
