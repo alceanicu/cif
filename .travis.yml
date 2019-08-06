@@ -1,15 +1,13 @@
 language: php
 
+env:
+  - CODECOV_TOKEN="f903a415-f42f-4ecc-bf42-7296c75f4f8f"
+    
 php:
   - 7.2
   - 7.3
 
 before_script:
   - composer install --prefer-source --no-interaction --no-dev
-
-before_install:
-  - php get github.com/mattn/goveralls
-  
-script:
-  - phpunit
-  - $GOPATH/bin/goveralls -service=travis-ci
+ 
+script: - phpunit
