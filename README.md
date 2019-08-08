@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/alceanicu/cif.svg?branch=master)](https://travis-ci.org/alceanicu/cif) [![Latest Stable Version](https://poser.pugx.org/alcea/cif/v/stable.svg)](https://packagist.org/packages/alcea/cif) [![Total Downloads](https://poser.pugx.org/alcea/cif/downloads.svg)](https://packagist.org/packages/alcea/cif) [![License](https://poser.pugx.org/alcea/cif/license.svg)](https://packagist.org/packages/alcea/cif)
+[![Build Status](https://travis-ci.org/alceanicu/cif.svg?branch=master)](https://travis-ci.org/alceanicu/cif) [![Latest Stable Version](https://poser.pugx.org/alcea/cif/v/stable.svg)](https://packagist.org/packages/alcea/cif) [![Total Downloads](https://poser.pugx.org/alcea/cif/downloads.svg)](https://packagist.org/packages/alcea/cif) [![License](https://poser.pugx.org/alcea/cif/license.svg)](https://packagist.org/packages/alcea/cif) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/alceanicu/cif/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/alceanicu/cif/?branch=master)
 
 # CIF
 PHP validation for Romanian VAT code (Validare PHP pentru CIF/ CUI)
