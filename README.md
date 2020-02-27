@@ -15,30 +15,28 @@ composer require alcea/cif
 "alcea/cif": "^1.1"
 ```
 
-### 3. or, clone from GitHub
-```
-git clone https://github.com/alceanicu/cif.git
-```
-
 # How to use?
 
 ```php
- <?php
- use alcea\cif\Cif;
- 
- $cifToBeValidated = '159'; // without prefix digit (RO|R)
- $cif = new Cif($cifToBeValidated);
- echo "CIF {$cifToBeValidated} is " . ( $cif->isValid() ? 'valid' : 'invalid' ) . PHP_EOL;
- 
- // or
+<?php
+# require __DIR__ . '\vendor\autoload.php';
+use alcea\cif\Cif;
 
- echo "CIF {$cifToBeValidated} is " . ( Cif::validate($cifToBeValidated) ? 'valid' : 'invalid' ) . PHP_EOL;
- ```
+$cifToBeValidated = '159'; // without prefix digit (RO|R)
+$cif = new Cif($cifToBeValidated);
+echo "CIF {$cifToBeValidated} is " . ( $cif->isValid() ? 'valid' : 'invalid' ) . PHP_EOL;
+
+// or
+
+echo "CIF {$cifToBeValidated} is " . ( Cif::validate($cifToBeValidated) ? 'valid' : 'invalid' ) . PHP_EOL;
+```
  
  # How to run tests?
 ```
 ## Open an terminal and run commands:
+git clone https://github.com/alceanicu/cif.git
 cd cif
+composer install
 ./vendor/bin/phpunit --bootstrap ./vendor/autoload.php --testdox
 ```
 
@@ -46,4 +44,3 @@ cd cif
 ## License
 
 This package is licensed under the [MIT](http://opensource.org/licenses/MIT) license.
-
