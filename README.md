@@ -5,7 +5,7 @@ PHP validation for Romanian VAT code (Validare PHP pentru CIF/ CUI)
 
 # How to install?
 
-### 1. Use composer
+### 1. use composer
 ```php
 composer require alcea/cif
 ```
